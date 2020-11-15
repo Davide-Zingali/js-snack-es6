@@ -11,10 +11,6 @@ var palla = {
 
 console.log('Peso prima prompt: ', palla);
 
+palla['peso'] = pesoPalla;
 
-palla.peso = pesoPalla;
-
-
-for (var key in palla) {
-    console.log('Peso dopo prompt: ', key.palla);
-}
+console.log('Peso dopo prompt: ', palla);

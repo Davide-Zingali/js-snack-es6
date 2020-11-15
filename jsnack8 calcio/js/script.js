@@ -36,18 +36,16 @@ var arraySquadre = [
 var randomPunti;
 var randomFalli;
 
-for (var i = 0; i < arraySquadre.length; i++) {
+// aggiunta arrow function
+var random = (num1) => Math.floor(Math.random() * num1 + 1);
+
+// ciclo che richiama la funzione
+for (let i = 0; i < arraySquadre.length; i++) {
     arraySquadre[i].punti = random(8);
     arraySquadre[i].falli = random(40);
 }
 
 // stampa
-for (var key in arraySquadre) {
+for (let key in arraySquadre) {
     console.log(arraySquadre[key]);
-}
-
-// funzione
-function random(num1) {
-    var ran = Math.floor(Math.random() * num1 + 1);
-    return ran
 }

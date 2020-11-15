@@ -28,7 +28,7 @@ var arrayBiciclette = [
 
 var biciLeggera = arrayBiciclette[0];
 
-for (var i = 0; i < arrayBiciclette.length; i++) {
+for (let i = 0; i < arrayBiciclette.length; i++) {
     if (arrayBiciclette[i].peso < biciLeggera.peso) {
         biciLeggera = arrayBiciclette[i];
     }
